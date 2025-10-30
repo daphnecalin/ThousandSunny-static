@@ -4,7 +4,10 @@ import Navbar from "./components/navBar";
 import Home from "./pages/homePage";
 import Login from "./pages/login";
 import Register from "./pages/register";
+import ProfileSettings from "./pages/profileSettings"
+import ProfilePage from "./pages/profilePage"
 import PrivateRoute from "./route/privateRoute";
+import Dashboard from "./pages/dashboard";
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/profileSettings" element={<ProfileSettings />} />
+          <Route path = "/profilePage/:username" element={<ProfilePage />}/>
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </div>
     </Router>
@@ -22,7 +28,3 @@ function App() {
 }
 
 export default App;
-
-
-// profileSettings
-// profilePage/:username

@@ -1,7 +1,7 @@
 import express from "express";
 import { uploadMedia, updateMedia, deleteMedia } from "../controllers/artistControllers/media.js";
 import { getPortfolio, getDashboard } from "../controllers/artistControllers/portfolioAndDashboard.js";
-import { getProfilePage } from "..controllers/artistControllers/profilePage.js";
+import { getProfilePage } from "../controllers/artistControllers/profilePage.js";
 
 const router = express.Router();
 
